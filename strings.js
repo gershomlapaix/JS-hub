@@ -32,8 +32,27 @@ console.log(fixedPassenger);
 const email = "lapaix@gmail.com";
 const loginEmail = "   Lapaix@gmail.com \n";
 
-const normalizedEmail = loginEmail.toLowerCase().trim()
-console.log(email === normalizedEmail)
+const normalizedEmail = loginEmail.toLowerCase().trim();
+console.log(email === normalizedEmail);
+
+// replacing some parts of the string
+const priceGB = "288,97#";
+const priceUS = priceGB.replace("#", "$").replace(",", ".");
+console.log("The price in US will be " + priceUS);
+
+// global replacement
+const announcement = `All passengers come to boarding door 23. Boarding door 23!`;
+console.log(announcement.replace("door", "gate"));
+// enhanced
+console.log(announcement.replace(/door/g, "gate"));
 
 
-// replacing s
+// BOOLEANS
+const plane = `Airbus A320neo`
+console.log(plane.includes('A32'));
+console.log(plane.includes('Boeing'));
+console.log(plane.startsWith('Airb'));
+
+if(plane.startsWith('Airbus') && plane.endsWith('neo')){
+    console.log(`Part of new AIRBUS family`);
+}
