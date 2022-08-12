@@ -76,3 +76,6 @@ arrow functions use this of the surrounding object.
 * keys can have any data types
 * easy to iterate
 * easy to compute size
+
+## HIGHE ORDER FUNCTIONS
+a function that receives another function as an argument, that returns a new functoin, both
