@@ -50,3 +50,29 @@ It's a region of the scope in which the variable is defined but can't be used in
 ## THIS
 
 arrow functions use this of the surrounding object.
+
+## DATA STRUCTURES
+
+1. Arrays
+
+- use when you need ordered list of values(might contain duplicates)
+- use when you need to manipulate data
+
+2. Sets
+
+- use when you need to work with unique values
+- use when need `high performance`
+- use `to remove duplicates from the arrays`
+
+3. Objects
+
+- More tradtional key/value store
+- Easier to write and access values with . and []
+
+4. Maps
+
+- Better performance
+
+* keys can have any data types
+* easy to iterate
+* easy to compute size
