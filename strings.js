@@ -56,3 +56,11 @@ console.log(plane.startsWith('Airb'));
 if(plane.startsWith('Airbus') && plane.endsWith('neo')){
     console.log(`Part of new AIRBUS family`);
 }
+
+
+// PART3
+console.log(`a+very+nice+string`.split('+')[0]);
+const [firstName,lastName] = 'Bon yve'.split(' ')
+
+const newName = ['Mr.', firstName, lastName[0].toUpperCase()+lastName.slice(1)].join(' ')
+console.log(newName);
