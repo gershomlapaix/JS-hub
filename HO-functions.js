@@ -11,3 +11,24 @@ const transformer = function (str, fn) {
 };
 
 transformer(`JavaScript is the best!`, upperFirstWord);
+
+// FUNCTIONS RETURNING OTHER FUNCTIONS
+///////////////////////////////////////////////
+const greet = (greeting) => (name) => {
+  console.log(`${greeting} ${name}`);
+};
+
+const greetingHey = greet("hey");
+greetingHey("La paix");
+greetingHey("Bon");
+
+// or call the above function like this
+greet("Hello")("Kareem");
+///////////////////////////////////////////////
+
+const greetFunc = function (greeting) {
+  return function (name) {
+    console.log(`${greeting} ${name}`);
+  };
+};
+greetFunc("Hello")("Kagabo");
