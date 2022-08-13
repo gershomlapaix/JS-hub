@@ -48,10 +48,23 @@ gersh.greet();
 console.log(gersh.age);
 console.log(gersh.fullName);
 
-
 // call static method
-PersonCl.hey()
+PersonCl.hey();
 
+/*  ---- INHERITANCE----*/
+class StudentCl extends PersonCl {
+  constructor(fullName, birthYear, course) {
+    super(fullName, birthYear); // always first
+    this.course = course;
+  }
+
+  introduce() {
+    console.log(`My name is ${this.fullName} and I study ${this.course}.`);
+  }
+}
+
+const Mathew = new StudentCl('Mathew Kkk', 2000, 'SPE')
+Mathew.introduce()
 
 /**
  * Important points
@@ -60,5 +73,3 @@ PersonCl.hey()
  * 2. Classes are first-classes citizens(can be passed into the functions and also be returned from the functions)
  * 3. Classes are executed in strict mode
  * */
-
-
