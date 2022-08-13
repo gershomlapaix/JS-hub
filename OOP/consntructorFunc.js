@@ -12,8 +12,16 @@ console.log(gersh instanceof Person);
 
 //  add methods
 Person.prototype.calcAge = function () {
-    console.log(2037 - this.birthYear);
-  };
-  
-  console.log(Person.prototype);
-  gersh['calcAge']()
+  console.log(2037 - this.birthYear);
+};
+
+console.log(Person.prototype);
+
+//   Any object has access to the prototype object
+gersh["calcAge"]();
+
+console.log(gersh.__proto__);
+console.log(Person.prototype === gersh.__proto__);
+
+console.log(Person.prototype.isPrototypeOf(gersh));
+console.log(Person.prototype.isPrototypeOf(Person));
