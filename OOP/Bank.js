@@ -15,10 +15,12 @@ class Account {
 
   deposit(val) {
     this.#movements.push(val);
+    return this;
   }
 
   withDraw(val) {
     this.deposit(-val);
+    return this;
   }
 
   #approveLoan(val) {
@@ -30,6 +32,8 @@ class Account {
       this.deposit(val);
       console.log(`Loan approved`);
     }
+
+    return this;
   }
 }
 
@@ -39,3 +43,6 @@ acc1.deposit(250);
 acc1.withDraw(140);
 
 console.log(acc1);
+
+// chaining methods
+acc1.deposit(300).deposit(500).withDraw(35).requestLoan(25000).withDraw(4000);
