@@ -79,3 +79,7 @@ arrow functions use this of the surrounding object.
 
 ## HIGHE ORDER FUNCTIONS
 a function that receives another function as an argument, that returns a new functoin, both
+
+## OOP
+
+`Prototypal inheritance`: the prototype contains methods that are accessible to all objects linked to that prototype.
