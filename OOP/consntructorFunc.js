@@ -25,3 +25,12 @@ console.log(Person.prototype === gersh.__proto__);
 
 console.log(Person.prototype.isPrototypeOf(gersh));
 console.log(Person.prototype.isPrototypeOf(Person));
+
+
+// define a static method
+Person.hey = function(){
+  console.log(`Hey there!`);
+}
+
+Person.hey()
+// gersh.hey()   // this will not work
